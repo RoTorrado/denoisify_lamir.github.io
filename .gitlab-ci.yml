@@ -1,0 +1,18 @@
+image: alpine:latest
+
+pages:
+  stage: deploy
+  script:
+    - mkdir -p .site
+    # Copiamos todo (incluye archivos ocultos) excepto .git y el CI file
+    - for f in * .[^.]*; do
+        if [ "$f" != ".git" ] && [ "$f" != ".site" ] && [ "$f" != ".gitlab-ci.yml" ]; then
+          cp -r "$f" .site/ || true;
+        fi;
+      done
+    - mv .site public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

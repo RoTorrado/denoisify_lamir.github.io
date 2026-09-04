@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DENOISIFY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      audio {
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+
+  <body class="font-sans bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+
+    <!-- NAVBAR -->
+    <header class="backdrop-blur bg-white/70 shadow-sm fixed w-full z-50">
+      <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold tracking-tight text-blue-800">DENOISIFY</h1>
+        <p class="text-gray-600 font-medium">2025</p>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="relative bg-gradient-to-br from-blue-900 via-blue-700 to-blue-600 text-white py-32 mt-20 overflow-hidden">
+      <div class="relative max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-5xl font-extrabold drop-shadow-lg">DENOISIFY: ESTE ES EL TITULO POSTA</h2>
+        <p class="mt-4 text-xl opacity-90">Audio Examples</p>
+      </div>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="flex-1 py-20">
+      <div class="max-w-7xl mx-auto px-6">
+
+        <!-- INTRODUCCION -->
+        <section id="about" class="mb-16 text-center">
+          <h3 class="text-4xl font-semibold mb-6">Introduction</h3>
+          <p class="text-lg max-w-3xl mx-auto leading-relaxed opacity-90">
+            This page provides audio examples corresponding to the experiments described in our paper
+            "MagTapeDB: A Dataset of Historical Magnetic Tape Recordings". You will find pairs of degraded and restored audio excerpts
+            for both piano and bandoneon, including noise types such as analog tape hiss and gramophone surface noise.
+            These examples complement the objective evaluation with perceptual insight into the restoration quality.
+          </p>
+        </section>
+
+        <!-- SECCIONES DE AUDIO -->
+        <section id="services" class="space-y-20">
+
+          <!-- TITULO GENERICO PARA LOS GRUPOS -->
+          <div class="text-center">
+            <h1 class="text-3xl font-bold text-blue-700">Dataset Audio Examples</h1>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="services" class="mb-16"> <h3 class="text-3xl font-semibold text-center mb-6"> Dataset Audio Examples </h3> <h1 align='center' class="text-xl font-semibold"> Audio: </h1> <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3"> <div class="bg-white shadow-md rounded-lg p-6 text-center"> <h4 class="text-xl font-semibold">ESTE</h4> <div class="spectrogram-player" data-width="auto"> <img src="Nuestros/Imag/D1_limpio.png" /> <audio controls> <source src="Nuestros/web/D1_limpio.wav" type="audio/wav" /> </audio> </div> </div> <div class="bg-white shadow-md rounded-lg p-6 text-center"> <h4 class="text-xl font-semibold">ESTE</h4> <div class="spectrogram-player" data-width="auto"> <img src="Nuestros/Imag/D1_ruido.png" /> <audio controls> <source src="Nuestros/web/D1_ruido.wav" type="audio/wav" /> </audio> </div> </div> <div class="bg-white shadow-md rounded-lg p-6 text-center"> <h4 class="text-xl font-semibold">ESTE</h4> <div class="spectrogram-player" data-width="auto"> <img src="Nuestros/Imag/D1_CSIC.png" /> <audio controls> <source src="Nuestros/web/D1_CSIC.wav" type="audio/wav" /> </audio> </div> </div> </div>
+
+
+
+
+
+          <!-- GRUPO 1 -->
+          <h1 class="text-xl font-semibold text-center">Audio:</h1>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <!-- CARD -->
+            <div class="bg-white/80 backdrop-blur shadow-md rounded-3xl p-6 text-center border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all">
+              <h4 class="text-xl font-semibold mb-3">ESTE</h4>
+              <div class="rounded-xl overflow-hidden shadow-sm">
+                <img src="Nuestros/Imag/D1_limpio.png" class="object-cover w-full" />
+              </div>
+              <audio controls>
+                <source src="Nuestros/web/D1_limpio.wav" type="audio/wav" />
+              </audio>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur shadow-md rounded-3xl p-6 text-center border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all">
+              <h4 class="text-xl font-semibold mb-3">ESTE</h4>
+              <div class="rounded-xl overflow-hidden shadow-sm">
+                <img src="Nuestros/Imag/D1_ruido.png" class="object-cover w-full" />
+              </div>
+              <audio controls>
+                <source src="Nuestros/web/D1_ruido.wav" type="audio/wav" />
+              </audio>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur shadow-md rounded-3xl p-6 text-center border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all">
+              <h4 class="text-xl font-semibold mb-3">ESTE</h4>
+              <div class="rounded-xl overflow-hidden shadow-sm">
+                <img src="Nuestros/Imag/D1_CSIC.png" class="object-cover w-full" />
+              </div>
+              <audio controls>
+                <source src="Nuestros/web/D1_CSIC.wav" type="audio/wav" />
+              </audio>
+            </div>
+          </div>
+
+          <!-- GRUPO 2 -->
+          <h1 class="text-xl font-semibold text-center">Audio:</h1>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <div class="bg-white/80 backdrop-blur shadow-md rounded-3xl p-6 text-center border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all">
+              <h4 class="text-xl font-semibold mb-3">ESTE</h4>
+              <div class="rounded-xl overflow-hidden shadow-sm">
+                <img src="Nuestros/Imag/C1_limpio.png" class="object-cover w-full" />
+              </div>
+              <audio controls>
+                <source src="Nuestros/web/C1_limpio.wav" type="audio/wav" />
+              </audio>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur shadow-md rounded-3xl p-6 text-center border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all">
+              <h4 class="text-xl font-semibold mb-3">ESTE</h4>
+              <div class="rounded-xl overflow-hidden shadow-sm">
+                <img src="Nuestros/Imag/C1_ruido.png" class="object-cover w-full" />
+              </div>
+              <audio controls>
+                <source src="Nuestros/web/C1_ruido.wav" type="audio/wav" />
+              </audio>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur shadow-md rounded-3xl p-6 text-center border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all">
+              <h4 class="text-xl font-semibold mb-3">ESTE</h4>
+              <div class="rounded-xl overflow-hidden shadow-sm">
+                <img src="Nuestros/Imag/C1_CSIC.png" class="object-cover w-full" />
+              </div>
+              <audio controls>
+                <source src="Nuestros/web/C1_CSIC.wav" type="audio/wav" />
+              </audio>
+            </div>
+
+          </div>
+
+          <!-- GRUPO 3 -->
+          <h1 class="text-xl font-semibold text-center">Audio:</h1>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <div class="bg-white/80 backdrop-blur shadow-md rounded-3xl p-6 text-center border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all">
+              <h4 class="text-xl font-semibold mb-3">ESTE</h4>
+              <div class="rounded-xl overflow-hidden shadow-sm">
+                <img src="Nuestros/Imag/D10_limpio.png" class="object-cover w-full" />
+              </div>
+              <audio controls>
+                <source src="Nuestros/web/D10_limpio.wav" type="audio/wav" />
+              </audio>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur shadow-md rounded-3xl p-6 text-center border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all">
+              <h4 class="text-xl font-semibold mb-3">ESTE</h4>
+              <div class="rounded-xl overflow-hidden shadow-sm">
+                <img src="Nuestros/Imag/D10_ruido.png" class="object-cover w-full" />
+              </div>
+              <audio controls>
+                <source src="Nuestros/web/D10_ruido.wav" type="audio/wav" />
+              </audio>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur shadow-md rounded-3xl p-6 text-center border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all">
+              <h4 class="text-xl font-semibold mb-3">ESTE</h4>
+              <div class="rounded-xl overflow-hidden shadow-sm">
+                <img src="
+

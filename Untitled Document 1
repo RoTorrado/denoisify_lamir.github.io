@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DENOISIFY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="spectrogram-player/style.css"
+    />
+    <script
+      type="text/javascript"
+      src="spectrogram-player/spectrogram-player.js"
+    ></script>
+    <style>
+      audio {
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;
+        /* para que el reproductor de audio sea responsive */
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  
+  
+  <!--ENCABEZADO DE PAGINA-->
+  <body class="font-sans bg-gray-100 text-gray-900 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-blue-800 text-white shadow-md">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold">2025</h1>
+      </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="bg-blue-900 text-white py-20">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-semibold">DENOISIFY: ESTE ES EL TITULO POSTA</h2>
+        <p class="mt-4 text-xl">Audio Examples</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-1 py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <section id="about" class="mb-16">
+          <h3 class="text-3xl font-semibold text-center mb-6">Introduction</h3>
+          <p class="text-lg text-center">
+          This page provides audio examples corresponding to the experiments described in our paper "MagTapeDB: A Dataset of Historical Magnetic Tape Recordings" You will find pairs of degraded and restored audio excerpts for both piano and bandoneon, including noise types such as analog tape hiss and gramophone surface noise. The examples are intended to complement the objective evaluation with perceptual insight into the restoration quality.
+          </p>
+        </section>
+
+
+        <section id="services" class="mb-16">
+          <h3 class="text-3xl font-semibold text-center mb-6">
+            Dataset Audio Examples
+          </h3>
+          
+          <h1 align='center' class="text-xl font-semibold">
+          Audio: 
+          </h1>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+              <h4 class="text-xl font-semibold">ESTE</h4>
+              <div class="spectrogram-player" data-width="auto">
+                <img src="Nuestros/Imag/D1_limpio.png" />
+                <audio controls>
+                  <source
+                    src="Nuestros/web/D1_limpio.wav"
+                    type="audio/wav"
+                  />
+                </audio>
+              </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+              <h4 class="text-xl font-semibold">ESTE</h4>
+              <div class="spectrogram-player" data-width="auto">
+                <img src="Nuestros/Imag/D1_ruido.png" />
+                <audio controls>
+                  <source
+                    src="Nuestros/web/D1_ruido.wav"
+                    type="audio/wav"
+                  />
+                </audio>
+              </div>
+            </div>
+        
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+              <h4 class="text-xl font-semibold">ESTE</h4>
+              <div class="spectrogram-player" data-width="auto">
+                <img src="Nuestros/Imag/D1_CSIC.png" />
+                <audio controls>
+                  <source
+                    src="Nuestros/web/D1_CSIC.wav"
+                    type="audio/wav"
+                  />
+                </audio>
+              </div>
+            </div>
+          </div>
+        
+          
+	<h1 align='center' class="text-xl font-semibold mt-8 ">
+	  Audio:
+	</h1>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+              <h4 class="text-xl font-semibold">ESTE</h4>
+              <div class="spectrogram-player" data-width="auto">
+                <img src="Nuestros/Imag/C1_limpio.png" />
+                <audio controls>
+                  <source
+                    src="Nuestros/web/C1_limpio.wav"
+                    type="audio/wav"
+                  />
+                </audio>
+              </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+              <h4 class="text-xl font-semibold">ESTE</h4>
+              <div class="spectrogram-player" data-width="auto">
+                <img src="Nuestros/Imag/C1_ruido.png" />
+                <audio controls>
+                  <source
+                    src="Nuestros/web/C1_ruido.wav"
+                    type="audio/wav"
+                  />
+                </audio>
+              </div>
+            </div>
+        
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+              <h4 class="text-xl font-semibold">ESTE</h4>
+              <div class="spectrogram-player" data-width="auto">
+                <img src="Nuestros/Imag/C1_CSIC.png" />
+                <audio controls>
+                  <source
+                    src="Nuestros/web/C1_CSIC.wav"
+                    type="audio/wav"
+                  />
+                </audio>
+              </div>
+            </div>
+          </div>
+        
+          
+	<h1 align='center' class="text-xl font-semibold mt-8 ">
+	  Audio:
+	</h1>
+          
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+              <h4 class="text-xl font-semibold">ESTE</h4>
+              <div class="spectrogram-player" data-width="auto">
+                <img src="Nuestros/Imag/D10_limpio.png" />
+                <audio controls>
+                  <source
+                    src="Nuestros/web/D10_limpio.wav"
+                    type="audio/wav"
+                  />
+                </audio>
+              </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+              <h4 class="text-xl font-semibold">ESTE</h4>
+              <div class="spectrogram-player" data-width="auto">
+                <img src="Nuestros/Imag/D10_ruido.png" />
+                <audio controls>
+                  <source
+                    src="Nuestros/web/D10_ruido.wav"
+                    type="audio/wav"
+                  />
+                </audio>
+              </div>
+            </div>
+        
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+              <h4 class="text-xl font-semibold">ESTE</h4>
+              <div class="spectrogram-player" data-width="auto">
+                <img src="Nuestros/Imag/D10_CSIC.png" />
+                <audio controls>
+                  <source
+                    src="Nuestros/web/D10_CSIC.wav"
+                    type="audio/wav"
+                  />
+                </audio>
+              </div>
+            </div>
+          </div>
+        
+
+          
+	<h1 align='center' class="text-xl font-semibold mt-8 ">
+	  Audio:
+	</h1>
+          
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+              <h4 class="text-xl font-semibold">ESTE</h4>
+              <div class="spectrogram-player" data-width="auto">
+                <img src="Nuestros/Imag/D10_limpio.png" />
+                <audio controls>
+                  <source
+                    src="Nuestros/web/D10_limpio.wav"
+                    type="audio/wav"
+                  />
+                </audio>
+              </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+              <h4 class="text-xl font-semibold">ESTE</h4>
+              <div class="spectrogram-player" data-width="auto">
+                <img src="Nuestros/Imag/D10_ruido.png" />
+                <audio controls>
+                  <source
+                    src="Nuestros/web/D10_ruido.wav"
+                    type="audio/wav"
+                  />
+                </audio>
+              </div>
+            </div>
+        
+            <div class="bg-white shadow-md rounded-lg p-6 text-center">
+              <h4 class="text-xl font-semibold">ESTE</h4>
+              <div class="spectrogram-player" data-width="auto">
+                <img src="Nuestros/Imag/D10_denoisify.png" />
+                <audio controls>
+                  <source
+                    src="Nuestros/web/D10_denoisify.wav"
+                    type="audio/wav"
+                  />
+                </audio>
+              </div>
+            </div>
+          </div>
+        
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-auto">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <p>&copy; 2025 Analia Arimon, Rodrigo Torrado y Guillermo Mazzeo</p>
+      </div>
+    </footer>
+  </body>
+</html>
